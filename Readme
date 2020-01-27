@@ -1,0 +1,9 @@
+PROJETO GOBARBER 
+  - Desenvolvido usando nodejs no backend, reactjs no front e react native no mobile
+
+FERRAMENTAS do backend
+  - yarn
+  - nodejs
+  - sucrase -> para usar o import e export do javascript ao inves do require do commonjs
+  - eslint com o padrão de projeto da airbnb -> configurado apos usar yarn eslint --init 
+  - nodemon para o ambiente de dev
