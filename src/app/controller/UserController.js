@@ -1,5 +1,5 @@
-import User from '../models/User';
 import bcrypt from 'bcryptjs';
+import User from '../models/User';
 
 class UserController {
   async store(req, res) {
@@ -20,6 +20,11 @@ class UserController {
       email,
       provider,
     });
+  }
+
+  async update(req, res) {
+    console.log(req.userId);
+    return res.json({ ok: true });
   }
 }
 export default new UserController();
