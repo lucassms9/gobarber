@@ -23,6 +23,7 @@ class UserController {
   }
 
   async update(req, res) {
+    // con
     return res.json({ ok: true });
   }
 }
