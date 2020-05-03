@@ -9,6 +9,7 @@ import ProviderController from './app/controller/ProviderController';
 import AppointmentController from './app/controller/AppointmentController';
 import ScheduleController from './app/controller/ScheduleController';
 import NotificationController from './app/controller/NotificationController';
+import AvailableController from './app/controller/AvailableController';
 
 const routes = new Router();
 
@@ -24,6 +25,7 @@ routes.get('/appointments', AppointmentController.index);
 routes.delete('/appointments/:id', AppointmentController.delete);
 routes.get('/schedule', ScheduleController.index);
 routes.get('/providers', ProviderController.index);
+routes.get('/providers/:providerId/available', AvailableController.index);
 routes.get('/notification', NotificationController.index);
 routes.put('/notification/:id', NotificationController.update);
 
